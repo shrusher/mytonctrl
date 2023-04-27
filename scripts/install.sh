@@ -56,7 +56,7 @@ if [ "${mode}" = "lite" ] && [ "$ignore" = false ] && ([ "${cpus}" -lt 2 ] || [ 
 	echo "Insufficient resources. Requires a minimum of 2 processors and 2Gb RAM."
 	exit 1
 fi
-if [ "${mode}" = "full" ] && [ "$ignore" = false ] && ([ "${cpus}" -lt 8 ] || [ "${memory}" -lt 8000000 ]); then
+if [ "${mode}" = "full" ] && [ "$ignore" = false ] && ([ "${cpus}" -lt 4 ] || [ "${memory}" -lt 8000000 ]); then
 	echo "Insufficient resources. Requires a minimum of 8 processors and 8Gb RAM."
 	exit 1
 fi
